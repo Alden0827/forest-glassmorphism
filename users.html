@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="fireflies">
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+</div>
+
+<div class="main-container">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo-wrapper">
+                <div class="logo">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+                <span class="logo-text">Admin</span>
+            </a>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a></li>
+            <li><a href="forms.html"><i class="fa-brands fa-wpforms"></i><span>Forms</span></a></li>
+            <li><a href="files.html"><i class="fa-solid fa-file-lines"></i><span>Files</span></a></li>
+            <li><a href="alerts.html"><i class="fa-solid fa-triangle-exclamation"></i><span>Alerts</span></a></li>
+            <li><a href="users.html"><i class="fa-solid fa-user"></i><span>Users</span></a></li>
+            <li><a href="map.html"><i class="fa-solid fa-map-location-dot"></i><span>Map</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div class="header-title">
+                <h1>Users</h1>
+            </div>
+            <div class="header-menu">
+                <input type="text" id="userSearchInput" class="input" placeholder="Search for users..">
+                <select id="roleFilter" class="input">
+                    <option value="all">All Roles</option>
+                    <option value="admin">Admin</option>
+                    <option value="editor">Editor</option>
+                    <option value="viewer">Viewer</option>
+                </select>
+                <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="user-grid" id="userGrid">
+                <!-- Users will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/users.js"></script>
+
+</body>
+</html>
